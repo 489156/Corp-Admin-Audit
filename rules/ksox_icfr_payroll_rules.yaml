@@ -1,0 +1,18 @@
+version: "2026.10"
+description: "K-SOX 내부회계관리제도(ICFR) 및 K-IFRS 제1019호 기반 인건비·통상임금·퇴직급여 충당부채 감사 규칙"
+constants:
+  min_wage_2026_hourly: 10320
+  min_wage_2026_monthly_209h: 2156880
+  statutory_insurance_rates_2026:
+    national_pension_employer: 0.0475
+    health_insurance_employer: 0.03595
+    long_term_care_ratio_on_health: 0.1295
+    employment_insurance_employer_midsize: 0.0115
+    industrial_accident_employer_default: 0.009
+  retirement_provision:
+    db_minimum_monthly_accrual_rate: 0.0833333
+    require_max_of_avg_and_ordinary_wage: true
+  goal_seeking_detection:
+    gsi_lower_bound: 0.70
+    gsi_upper_bound: 1.05
+    allow_c_layer_disable: false

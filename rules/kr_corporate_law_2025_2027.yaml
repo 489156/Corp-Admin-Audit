@@ -1,0 +1,79 @@
+version: "2026.10"
+description: "시점 인식(Point-in-Time) 한국 기업 행정·노동·컴플라이언스 연쇄 개정 법령 규칙 그래프 (2025~2027)"
+rules:
+  - rule_id: "LAW-2025-01"
+    statute: "남녀고용평등법 제18조의2, 근로기준법 제74조"
+    topic: "배우자 출산휴가 및 미숙아 출산전후휴가 확대"
+    effective_date: "2025-02-23"
+    is_mandatory: true
+    category: "maternity_paternity"
+    required_keywords: ["20일", "3회", "100일"]
+    legacy_violation_patterns: ["배우자 출산휴가 10일", "1회 분할"]
+    standard_clause_template: "회사는 근로자가 배우자의 출산을 이유로 휴가를 청구하는 경우 20일의 유급휴가를 부여하며, 출산일로부터 120일 이내에 3회까지 나누어 사용할 수 있다. 미숙아 출산전후휴가는 100일로 한다."
+
+  - rule_id: "LAW-2026-01"
+    statute: "최저임금법 제5조 (2026년 최저임금 고시)"
+    topic: "2026년도 최저임금 준수"
+    effective_date: "2026-01-01"
+    is_mandatory: true
+    category: "minimum_wage"
+    min_hourly_wage_krw: 10320
+    min_monthly_wage_209h_krw: 2156880
+    standard_clause_template: "2026년 1월 1일부터 적용되는 최저임금은 시간급 10,320원(월 209시간 기준 2,156,880원) 이상으로 한다."
+
+  - rule_id: "LAW-2026-02"
+    statute: "남녀고용평등법 제19조, 제19조의2, 제19조의4"
+    topic: "단기 육아휴직(1~2주) 신설 및 육아기 근로시간 단축 대상 확대(만 12세)"
+    effective_date: "2026-08-20"
+    is_mandatory: true
+    category: "parental_leave_short"
+    required_keywords: ["단기 육아휴직", "1주", "2주", "만 12세"]
+    legacy_violation_patterns: ["만 8세 이하 자녀에 한하여 육아기 근로시간 단축"]
+    standard_clause_template: "만 8세 이하 또는 초등학교 2학년 이하 자녀를 양육하는 근로자는 자녀의 방학·휴원·질병 등 돌봄이 필요한 경우 연 1회 1주(7일) 또는 2주(14일) 단위로 단기 육아휴직을 사용할 수 있으며, 해당 기간은 연차유급휴가 출근율 및 승진 소요연수에 100% 산입한다. 육아기 근로시간 단축 대상은 만 12세(초6) 이하로 한다."
+
+  - rule_id: "LAW-2026-03"
+    statute: "남녀고용평등법 제18조의2, 제18조의4, 근로자퇴직급여 보장법 제43조"
+    topic: "배우자 출산전후휴가(50일 전 조기사용) 및 배우자 유산·사산휴가(5일) 신설"
+    effective_date: "2026-09-18"
+    is_mandatory: true
+    category: "spouse_maternity_miscarriage"
+    required_keywords: ["배우자 출산전후휴가", "50일 전", "배우자 유산·사산휴가", "5일", "3일 유급"]
+    legacy_violation_patterns: ["출산한 날부터 배우자 출산휴가"]
+    standard_clause_template: "배우자 출산전후휴가(20일 유급)는 출산예정일 50일 전부터 사용할 수 있다. 배우자가 유산 또는 사산한 경우 근로자는 유산·사산일로부터 20일 이내에 최대 5일(최초 3일 유급)의 배우자 유산·사산휴가를 사용할 수 있다."
+
+  - rule_id: "LAW-2026-04"
+    statute: "근로기준법 제107조"
+    topic: "임금 체불 범죄 법정형 상향 (5년 이하 징역 또는 5천만원 이하 벌금)"
+    effective_date: "2026-10-08"
+    is_mandatory: true
+    category: "wage_arrears_penalty"
+    required_keywords: ["임금 정기지급", "통상임금 재검토"]
+    standard_clause_template: "회사는 임금 및 퇴직급여의 기일 내 전액 지급 의무를 준수하며, 정기상여금 등 통상임금 산입 범위를 법령 및 대법원 판례에 부합하도록 정기 감사한다."
+
+  - rule_id: "LAW-2026-05"
+    statute: "남녀고용평등법 제12조, 제18조의3, 제39조"
+    topic: "난임치료휴가 유급일 확대(4일) 및 법인 대표자·친족 직장 내 성희롱 규율 확대"
+    effective_date: "2026-11-27"
+    is_mandatory: true
+    category: "subfertility_and_harassment"
+    required_keywords: ["난임치료휴가", "4일 유급", "법인 대표자"]
+    legacy_violation_patterns: ["최초 2일 유급", "연 6일(최초 2일 유급)"]
+    standard_clause_template: "회사는 근로자가 인공수정 또는 체외수정 등 난임치료를 받기 위하여 휴가를 청구하는 경우 연간 6일(최초 4일 유급)의 난임치료휴가를 부여한다. 직장 내 성희롱 금지 및 예방교육 의무 대상에는 법인의 대표자 및 대표자의 친족인 상급자·근로자를 포함한다."
+
+  - rule_id: "LAW-2026-06"
+    statute: "근로기준법 제54조"
+    topic: "1일 4시간 근무 시 근로자 요청에 따른 30분 휴게시간 면제 특례"
+    effective_date: "2026-12-10"
+    is_mandatory: false
+    category: "four_hour_break_exemption"
+    required_keywords: ["4시간 근무", "휴게시간 면제"]
+    standard_clause_template: "반차 사용 등으로 1일 근로시간이 4시간인 경우, 근로자가 명시적으로 요청하면 30분의 휴게시간을 부여하지 아니하고 즉시 퇴근하게 할 수 있다."
+
+  - rule_id: "LAW-2027-01"
+    statute: "근로기준법 제60조, 제114조"
+    topic: "연차유급휴가 반일(반차 4시간) 분할 사용 법제화 및 불이익 금지"
+    effective_date: "2027-06-10"
+    is_mandatory: true
+    category: "half_day_annual_leave"
+    required_keywords: ["반일", "4시간 분할", "불이익 처우 금지"]
+    standard_clause_template: "근로자는 연차유급휴가를 반일(4시간) 단위로 분할하여 사용할 수 있으며, 회사는 연차·반차 사용을 이유로 인사평가나 승진에서 불이익한 처우를 하지 아니한다."
